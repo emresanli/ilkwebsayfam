@@ -21,11 +21,13 @@
             background-attachment: fixed;
             background-size: cover;}
         div {text-align:center;
-            width:80%;}
+            width:100%;}
         iframe{ width: 500px;}
         button {text-align: right;
                 background-color:white;
                 color: darkkhaki;
+                width: 100;
+                height: 50;
                 border-color:rgb(16, 83, 107);}
     </style>
     <!--çıktıların siyah-beyaz olması için-->
@@ -34,17 +36,19 @@
     </style>
 </head>
 <body>
-    <p align="right"> <button><a href="https://app.patika.dev/jeo" target="blank">Patika profilim</a></button> <aalign="right"> <button><a href="https://github.com/emresanli" target="_blank">github profilim</a></button></p>
-    <h1>EMRE ŞANLI</h1>
+    <a href="iletisim.html">
+        <img src="icon.ico/iletişimlogo.png" alt="iletişim" title="bana ulaş" width="50" height="50" align="right">
+    <p align="right"> <button><p id="sayfabasi"><a href="#sayfasonu" title="sayfa sonuna git"> <span style="color:brown;">sayfa sonuna git</span></a></p></button></p>
+    <h1> <strong>EMRE ŞANLI</strong></h1>
 </body>
 <!-- hr etiketi çizgi çekmek için kullanılır. -->
     <hr>
     <!-- kendini tanıt -->
         <h2>Hakkımda</h2>
-        <p>Merhaba ben Emre ŞANLI. 1988 Antalya doğumluyum. Dokuz Eylül Üniversitesi Jeoloji Mühendisliği mezunuyum.
-            Aktif olarak bu mesleğe devam etmekteyim. Ayrıca Anadolu Üniversitesi İktisat mezunuyum.
+        <p>Merhaba ben Emre ŞANLI. 1988 Antalya doğumluyum. <a href="https://jeoloji.deu.edu.tr/tr/" title="deu jeoloji">Dokuz Eylül Üniversitesi Jeoloji Mühendisliği </a>mezunuyum.
+            Aktif olarak bu mesleğe devam etmekteyim. Ayrıca <a href="https://www.anadolu.edu.tr/acikogretim/turkiye-programlari/iktisat-fakultesi-lisans-programlari-4-yillik/iktisat" title="aüif"> Anadolu Üniversitesi İktisat mezunuyum.</a>
             Kendime yeni bilgiler katmak adına <a href="https://app.patika.dev"> Patikada </a> 
-            front-ent eğitimini takip etmekteyim. Bu web sayfasını da ilk html sayfam olarak hazırladım.
+            front-ent eğitimini takip etmekteyim. Bu web sayfasını da ilk html sayfam olarak hazırladım.Üzerine eklemeler yaparak devam etmekteyim.
         <!-- etiketlerin listesi -->
         <h2>Etiketler</h2>
         <ol>
@@ -77,24 +81,26 @@
         </ol>
                     <!-- etiketlerin açıklaması -->
                     <p>Bazı etiketlerin açıklamasını başlıklar halinde inceleyelim.</p>
-                 <h4>title</h4>
-                    <P>Arama motorlarının web sayfamızı listelemek için kullandığı kısımdır. <br>
-                    Sekme ismi ve favorilere eklerken otomatik olarak gelen isimdir.</P>
-                    <p>bu sitenin title'ı "Emre Şanlı" olarak belirlenmiştir.</p>
-                <h4>style</h4>
-                    <p>İçeriğimizin sayfamızın neresinde nasıl görüneceğini belirleyen etikettir. <br>
-                    Bu etiket altında renk hizalama boyutlar vb. değişikler yapılmaktadır. <br>
-                    Belli kuralları olan bu belirteçlere "css" diyoruz.</p>
-                <h4>iframe</h4>
-                    <p>Belge içerisinde belge göstermemizi sağlar. 
-                    Genelde başka bir sitedeki belgeyi kendi sitemizde göstermek için kullanırız.
-                    Örneğin bir youtube videosunun üzerine gelip sağ tık ile yerleştirme kodunu kopyalayıp kullanabiliriz.</p>
-                    <div><iframe width="727" height="409" src="https://www.youtube.com/embed/XnzxEGLaPxs" title="Night Paris JAZZ - Slow Sax Jazz Music - Relaxing Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div>
+                        <h4>title</h4>
+                            <P>Arama motorlarının web sayfamızı listelemek için kullandığı kısımdır. <br>
+                            Sekme ismi ve favorilere eklerken otomatik olarak gelen isimdir.</P>
+                            <p>bu sitenin title'ı "Emre Şanlı" olarak belirlenmiştir.</p>
+                        <h4>style</h4>
+                            <p>İçeriğimizin sayfamızın neresinde nasıl görüneceğini belirleyen etikettir. <br>
+                            Bu etiket altında renk hizalama boyutlar vb. değişikler yapılmaktadır. <br>
+                            Belli kuralları olan bu belirteçlere "css" diyoruz.</p>
+                        <h4>iframe</h4>
+                            <p>Belge içerisinde belge göstermemizi sağlar. 
+                            Genelde başka bir sitedeki belgeyi kendi sitemizde göstermek için kullanırız.
+                            Örneğin bir youtube videosunun üzerine gelip sağ tık ile yerleştirme kodunu kopyalayıp kullanabiliriz.</p>
+                                <div><iframe width="800" height="409" src="https://www.youtube.com/embed/XnzxEGLaPxs" title="Night Paris JAZZ - Slow Sax Jazz Music - Relaxing Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                        <h4>img</h4>
+                            <p>Resim eklemek için kullandığımız bu etiket kapanmaya ihtiyaç duymaz</p>
+                                <div><img width="800" height="300" src="https://picsum.photos/800/300" alt="fotogelecek" title="lorem picsum"></div>
+                        <h4>link</h4>
+                            <p>Bu etiketle hem dış kaynaktan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapabiliriz.</p>
                     </div>
-                <h4>img</h4>
-                    <p>Resim eklemek için kullandığımız bu etiket kapanmaya ihtiyaç duymaz</p>
-                    <div><img width="600" height="250" src="icon.ico/images.jfif" alt=""></div>
-                <h4>link</h4>
-                    <p>Bu etiketle hem dış kaynaktan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapabiliriz.</p>
-    </body>
+                        <p align="right"> <button><p id="sayfasonu"><a href="#sayfabasi" title="sayfa başına dön"> <span style="color:brown;">sayfa başına dön</span></a></p></button></p>
+                    </body>
 </html>
