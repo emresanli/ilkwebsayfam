@@ -8,7 +8,7 @@
     <link rel="icon" href="icon.ico/atatürk.ico" type="image/x-icon">
     <!-- yazı stili belirleme -->
     <style>
-        h1,h2,h3,h4 {font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        h1,h2,h3,h4,.acıklama{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                     color:slategray}
         p li {font-family: 'Courier New', Courier, monospace;}
     </style>
@@ -20,9 +20,11 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;}
-        div {text-align:center;
+        /* div ile sınırlandırılmış alanın özelliklerini değiştirme */
+            div {text-align:center;
             width:100%;}
         iframe{ width: 500px;}
+        /* buton özelliklerini değiştirme */
         button {text-align: right;
                 background-color:white;
                 color: darkkhaki;
@@ -35,72 +37,75 @@
         * {color: white;background-color: black;}
     </style>
 </head>
-<body>
-    <a href="iletisim.html">
-        <img src="icon.ico/iletişimlogo.png" alt="iletişim" title="bana ulaş" width="50" height="50" align="right">
-    <p align="right"> <button><p id="sayfabasi"><a href="#sayfasonu" title="sayfa sonuna git"> <span style="color:brown;">sayfa sonuna git</span></a></p></button></p>
+    <body>
+        <!-- iletişim sayfanına yönlendirme -->
+        <a href="iletisim.html">
+            <img src="icon.ico/iletişimlogo.png" alt="iletişim" title="bana ulaş" width="50" height="50" align="right">
+            <!-- sayfabaşı sayfa sonu döngüsü oluşturma -->
+        <p align="right"> <button><p id="sayfabasi"><a href="#sayfasonu" title="sayfa sonuna git"> <span style="color:brown;">sayfa sonuna git</span></a></p></button></p>
     <h1> <strong>EMRE ŞANLI</strong></h1>
-</body>
-<!-- hr etiketi çizgi çekmek için kullanılır. -->
+    <!-- hr etiketi çizgi çekmek için kullanılır. -->
     <hr>
-    <!-- kendini tanıt -->
+        <!-- kendini tanıt (a href ve title kullanımı) -->
         <h2>Hakkımda</h2>
-        <p>Merhaba ben Emre ŞANLI. 1988 Antalya doğumluyum. <a href="https://jeoloji.deu.edu.tr/tr/" title="deu jeoloji">Dokuz Eylül Üniversitesi Jeoloji Mühendisliği </a>mezunuyum.
-            Aktif olarak bu mesleğe devam etmekteyim. Ayrıca <a href="https://www.anadolu.edu.tr/acikogretim/turkiye-programlari/iktisat-fakultesi-lisans-programlari-4-yillik/iktisat" title="aüif"> Anadolu Üniversitesi İktisat mezunuyum.</a>
-            Kendime yeni bilgiler katmak adına <a href="https://app.patika.dev"> Patikada </a> 
-            front-ent eğitimini takip etmekteyim. Bu web sayfasını da ilk html sayfam olarak hazırladım.Üzerine eklemeler yaparak devam etmekteyim.
-        <!-- etiketlerin listesi -->
+            <p>Merhaba ben Emre ŞANLI. 1988 Antalya doğumluyum. <a href="https://jeoloji.deu.edu.tr/tr/" title="deu jeoloji">Dokuz Eylül Üniversitesi Jeoloji Mühendisliği </a>mezunuyum.
+                Aktif olarak bu mesleğe devam etmekteyim. Ayrıca <a href="https://www.anadolu.edu.tr/acikogretim/turkiye-programlari/iktisat-fakultesi-lisans-programlari-4-yillik/iktisat" title="aüif"> Anadolu Üniversitesi İktisat mezunuyum.</a>
+                Kendime yeni bilgiler katmak adına <a href="https://app.patika.dev"> Patikada </a> 
+                front-ent eğitimini takip etmekteyim. Bu web sayfasını da ilk html sayfam olarak hazırladım.Üzerine eklemeler yaparak devam etmekteyim.
+            <!-- etiketlerin listesi (ul/ol-li listeleri-b ile kalın yazı br ile alt satır)-->
         <h2>Etiketler</h2>
-        <ol>
-            <h3><b><li>head</li> </b></h3>
-                <p>head etiketi içerisinde sayfanın kullanıcı tarafından görünmeyen kısımları bulunur<br>
-                Bu etiket alanında sadece aşağıdaki etiketler bulunur.</p>
-            <ul>
-                <li>title</li>
-                <li>meta</li>
-                <li>style</li>
-                <li>script</li>
-                <li>noscript</li>
-                <li>link</li>
-                <li>base</li> <br>
-            </ul>
-            <h3><b><li>body</li></b></h3>
-                <p>body etiketi içerisinde sayfanın ziyaretçiler tarafından görünen içeririkleri yer alır <br>
-                Kullanılan en yaygın etiketler aşağıdaki gibidir.</p>
-            <ul>
-                <li>h1,h2,h3,h4,h5,h6</li>
-                <li>p</li>
-                <li>br</li>
-                <li>a</li>
-                <li>strong</li>
-                <li>b</li>
-                <li>button</li>
-                <li>img</li>
-                <li>iframe</li>
-            </ul>
-        </ol>
-                    <!-- etiketlerin açıklaması -->
-                    <p>Bazı etiketlerin açıklamasını başlıklar halinde inceleyelim.</p>
-                    <div>
-                        <h4>title</h4>
-                            <P>Arama motorlarının web sayfamızı listelemek için kullandığı kısımdır. <br>
-                            Sekme ismi ve favorilere eklerken otomatik olarak gelen isimdir.</P>
-                            <p>bu sitenin title'ı "Emre Şanlı" olarak belirlenmiştir.</p>
-                        <h4>style</h4>
-                            <p>İçeriğimizin sayfamızın neresinde nasıl görüneceğini belirleyen etikettir. <br>
-                            Bu etiket altında renk hizalama boyutlar vb. değişikler yapılmaktadır. <br>
-                            Belli kuralları olan bu belirteçlere "css" diyoruz.</p>
-                        <h4>iframe</h4>
-                            <p>Belge içerisinde belge göstermemizi sağlar. 
-                            Genelde başka bir sitedeki belgeyi kendi sitemizde göstermek için kullanırız.
-                            Örneğin bir youtube videosunun üzerine gelip sağ tık ile yerleştirme kodunu kopyalayıp kullanabiliriz.</p>
-                                <div><iframe width="800" height="409" src="https://www.youtube.com/embed/XnzxEGLaPxs" title="Night Paris JAZZ - Slow Sax Jazz Music - Relaxing Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                        <h4>img</h4>
-                            <p>Resim eklemek için kullandığımız bu etiket kapanmaya ihtiyaç duymaz</p>
-                                <div><img width="800" height="300" src="https://picsum.photos/800/300" alt="fotogelecek" title="lorem picsum"></div>
+            <ol>
+                <h3><b><li>head</li> </b></h3>
+                    <p>head etiketi içerisinde sayfanın kullanıcı tarafından görünmeyen kısımları bulunur<br>
+                    Bu etiket alanında sadece aşağıdaki etiketler bulunur.</p>
+                    <ul>
+                        <li>title</li>
+                        <li>meta</li>
+                        <li>style</li>
+                        <li>script</li>
+                        <li>noscript</li>
+                        <li>link</li>
+                        <li>base</li> <br>
+                    </ul>
+                <h3><b><li>body</li></b></h3>
+                    <p>body etiketi içerisinde sayfanın ziyaretçiler tarafından görünen içeririkleri yer alır <br>
+                    Kullanılan en yaygın etiketler aşağıdaki gibidir.</p>
+                    <ul>
+                        <li>h1,h2,h3,h4,h5,h6</li>
+                        <li>p</li>
+                        <li>br</li>
+                        <li>a</li>
+                        <li>strong</li>
+                        <li>b</li>
+                        <li>button</li>
+                        <li>img</li>
+                        <li>iframe</li>
+                    </ul>
+            </ol> <hr>
+                        <!-- etiketlerin açıklaması p class verme bu classa göre biçim özellikleri değiştirme di ile blok oluşturup toplu olara biçim değiştirme-->
+                        <p class="acıklama"><b>Bazı etiketlerin açıklamasını başlıklar halinde inceleyelim;</b></p>
+                <div>
+                    <h4>title</h4>
+                        <P>Arama motorlarının web sayfamızı listelemek için kullandığı kısımdır. <br>
+                        Sekme ismi ve favorilere eklerken otomatik olarak gelen isimdir.</P>
+                        <p>bu sitenin title'ı "Emre Şanlı" olarak belirlenmiştir.</p>
+                    <h4>style</h4>
+                        <p>İçeriğimizin sayfamızın neresinde nasıl görüneceğini belirleyen etikettir. <br>
+                        Bu etiket altında renk hizalama boyutlar vb. değişikler yapılmaktadır. <br>
+                        Belli kuralları olan bu belirteçlere "css" diyoruz.</p>
+                    <h4>iframe</h4>
+                        <p>Belge içerisinde belge göstermemizi sağlar. 
+                        Genelde başka bir sitedeki belgeyi kendi sitemizde göstermek için kullanırız.
+                        Örneğin bir youtube videosunun üzerine gelip sağ tık ile yerleştirme kodunu kopyalayıp kullanabiliriz.</p>
+                            <div><iframe width="800" height="409" src="https://www.youtube.com/embed/XnzxEGLaPxs" title="Night Paris JAZZ - Slow Sax Jazz Music - Relaxing Background Music" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <h4>img</h4>
+                        <p>Resim eklemek için kullandığımız bu etiket kapanmaya ihtiyaç duymaz</p>
+                            <a href="https://picsum.photos/" title="loremi ziyaret et" target="_blank">
+                            <div><img width="800" height="300" src="https://picsum.photos/800/300" alt="fotogelecek"></div></a>
                         <h4>link</h4>
-                            <p>Bu etiketle hem dış kaynaktan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapabiliriz.</p>
-                    </div>
-                        <p align="right"> <button><p id="sayfasonu"><a href="#sayfabasi" title="sayfa başına dön"> <span style="color:brown;">sayfa başına dön</span></a></p></button></p>
-                    </body>
+                        <p>Bu etiketle hem dış kaynaktan hem de dökümanımızın bulunduğu dosyadan ilişkilendirme yapabiliriz.</p>
+                </div>
+                <!-- sayfabaşı ve sayfa sonu döngüsü oluşturma -->
+                    <p align="right"> <button><p id="sayfasonu"><a href="#sayfabasi" title="sayfa başına dön"> <span style="color:brown;">sayfa başına dön</span></a></p></button></p>
+    </body>
 </html>
