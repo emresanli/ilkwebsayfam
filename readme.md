@@ -1,5 +1,5 @@
 # İlk HTML Sayfam
-Bu repo [kodluyoruz](https://app.patika.dev/) eğitimimde oluşturduğum ilk html sayfam. İçerisinde bir adet readme dosyası bir adet index.html dosyası ve icon.ico klasörü bulundurmaktadır.
+Bu repo [kodluyoruz](https://app.patika.dev/) eğitimimde oluşturduğum ilk html sayfam. İçerisinde bir adet readme dosyası bir adet index.html bir adet iletisim.html dosyası ve icon.ico klasörü bulundurmaktadır.
 ## Hakkımda
 Kişisel bilgiler içerir.
 ## etiketler
